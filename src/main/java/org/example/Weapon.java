@@ -1,0 +1,21 @@
+package org.example;
+
+public enum Weapon {
+    SWORD(10,5), DAGGER(7,14), ARROW(8,16);
+
+    private int damage;
+    private double attackSpeed;
+
+    Weapon(int damage, double attackSpeed){
+        this.damage = damage;
+        this.attackSpeed = attackSpeed;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public double getAttackSpeed() {
+        return attackSpeed;
+    }
+}
